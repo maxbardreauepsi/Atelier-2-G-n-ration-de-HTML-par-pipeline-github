@@ -33,8 +33,6 @@ jobs:
       run: mvn -DskipTests -B package --file pom.xml
     - name: generate html
       run: sh make_html.sh target/biblio-0.1.jar
-    - name: Deploy to GitHub Pages
-      uses: maxbardreauepsi/Atelier-2-G-n-ration-de-HTML-par-pipeline-github@v4.4.1
 
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
